@@ -1,0 +1,345 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="소스 파일">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="리소스 파일">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="소스 파일\1_Manager">
+      <UniqueIdentifier>{28a3e676-7d3e-477a-9a97-7f022a25853a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\0_Entry">
+      <UniqueIdentifier>{34bd8c28-c94d-4406-9013-605b6fede64a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\2_Base">
+      <UniqueIdentifier>{3e4241d1-9b1b-449a-8eff-92a0b2a50c0a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\3_Util">
+      <UniqueIdentifier>{93df75eb-46b2-4e88-83ea-b94e93a76dd2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\0_Entry\EntryPoint">
+      <UniqueIdentifier>{1f626634-e0da-4587-97a7-a442d074633c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\0_Entry\PrepareWnd">
+      <UniqueIdentifier>{9e733213-f73f-4b39-9c25-a59e0a94bc35}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\0_Entry\WndProc">
+      <UniqueIdentifier>{97fcb53f-e03e-412a-8c77-f163f832ab55}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\1_Manager\GameManager">
+      <UniqueIdentifier>{bc7bcc39-2633-4fb1-a6d5-c070113863a7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\1_Manager\SceneManager">
+      <UniqueIdentifier>{4da15f2e-963b-446f-a9af-0ed208028d64}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\1_Manager\WndManager">
+      <UniqueIdentifier>{80c6c7cb-1418-40e1-ac7f-9e32b4655ce8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\2_Base\Scene">
+      <UniqueIdentifier>{233af817-8e9d-4755-b0d0-b85b52e52ed4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\3_Util\BitmapUtil">
+      <UniqueIdentifier>{e2dece41-10ef-4e1b-9308-3ca3b9ff15c1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\2_Base\GameObject">
+      <UniqueIdentifier>{19a425ae-73a3-46a4-97e8-dbe964e552bf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\2_Base\Object">
+      <UniqueIdentifier>{a9689b8f-85f9-4476-829c-fa84afb010a7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\3_Util\CameraUtil">
+      <UniqueIdentifier>{e64217e6-e4c5-409e-9360-88efdf7e0b87}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\3_Util\MouseUtil">
+      <UniqueIdentifier>{b7ffd348-1fb3-489c-882a-7c26a7cbff77}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\3_Util\PngUtil">
+      <UniqueIdentifier>{ec14f18c-6a5e-40c6-8c68-2e6829fff731}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\4_Game">
+      <UniqueIdentifier>{20c19ed4-e05a-4cd4-8bd5-e6e4460b8cd3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\4_Game\Scene">
+      <UniqueIdentifier>{cd44e702-eaed-4e36-9a2b-124afc79341d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\4_Game\Scene\FirstScene">
+      <UniqueIdentifier>{8784c3ad-f4e1-4f12-888e-ab182208aa28}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\4_Game\Object">
+      <UniqueIdentifier>{b4827420-38f0-4c93-a652-a387fe48cae6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\2_Base\Button">
+      <UniqueIdentifier>{d1d13247-6891-45dd-959d-7992e1e2b44a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\3_Util\TextView">
+      <UniqueIdentifier>{ae2955b5-196e-41bf-99da-b3954f54c462}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\4_Game\Object\MaptoolScene">
+      <UniqueIdentifier>{ae9d13b2-88fc-470c-8a43-489b504162b1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\4_Game\Object\MaptoolScene\Object">
+      <UniqueIdentifier>{a1dd94a8-b0ed-4e01-a22f-a336921090f5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\4_Game\Object\MaptoolScene\UI">
+      <UniqueIdentifier>{1a139982-7337-4f4b-a7cd-2bf783f93674}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\4_Game\Object\MaptoolScene\Other">
+      <UniqueIdentifier>{bd605866-650e-4dd4-95e0-0d858c9d7dfa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="소스 파일\4_Game\Object\MaptoolScene\Other\MapData">
+      <UniqueIdentifier>{4857da50-bd0f-4abb-9891-32f8cbf14698}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\4_Game\Scene\MapToolScene">
+      <UniqueIdentifier>{fe4051ff-6241-439e-96b9-1d2ee6993acf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\4_Game\Object\MaptoolScene\Other\TilePallete">
+      <UniqueIdentifier>{e6710782-28ad-498c-9014-80dd3e65d8fb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\4_Game\Scene\MusicSelectScene">
+      <UniqueIdentifier>{2130e80e-9427-426a-bb8e-d992c615c3a0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\4_Game\Scene\GameScene">
+      <UniqueIdentifier>{414bf732-5b6d-4e93-8065-9ce70c523e86}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\4_Game\Scene\EndGameScene">
+      <UniqueIdentifier>{c99a173c-c826-4be2-8415-c27b672dd70b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\4_Game\Object\FirstScene">
+      <UniqueIdentifier>{6c915726-982d-4874-b2cd-dc98145ef8c4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\4_Game\Object\FirstScene\Object">
+      <UniqueIdentifier>{037228dd-344f-4826-90d2-72615d166b8b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\4_Game\Object\FirstScene\UI">
+      <UniqueIdentifier>{3cd2f138-5d87-4981-9ebc-7f2e7776a6ae}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\4_Game\Object\FirstScene\UI\Button">
+      <UniqueIdentifier>{190d8c64-162e-4b87-b298-8038065ed362}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\4_Game\Object\FirstScene\UI\LogoImage">
+      <UniqueIdentifier>{af5e207f-e355-4703-8a95-40ee71bec04f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\4_Game\Object\FirstScene\UI\MainPanel">
+      <UniqueIdentifier>{acdc26b4-a4c5-4553-b34c-beea7b3a1466}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\4_Game\Scene\MusicSelectScene\UI">
+      <UniqueIdentifier>{ed36596f-5291-443b-8f33-9d66e117c71f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\4_Game\Scene\MusicSelectScene\UI\MusicSelectAlbumCover">
+      <UniqueIdentifier>{6542dce7-355f-41e5-a469-b0b85763d0ce}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\4_Game\Scene\MusicSelectScene\UI\MusicSelectBackground">
+      <UniqueIdentifier>{5be3164a-f38f-422f-9d2c-abbfbebfc94e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\4_Game\Scene\MusicSelectScene\UI\PauseMenu">
+      <UniqueIdentifier>{fa056a06-74cc-4908-8c00-3da863aacca4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\4_Game\Object\MusicInfo">
+      <UniqueIdentifier>{0665161e-9a36-4e81-b3f9-a75ece260e5b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\4_Game\Scene\MusicSelectScene\UI\MusicInfoPanel">
+      <UniqueIdentifier>{171db610-e815-4e95-8523-7d683e53159f}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="defines.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="WindowProc.h">
+      <Filter>소스 파일\0_Entry\WndProc</Filter>
+    </ClInclude>
+    <ClInclude Include="PrepareWnd.h">
+      <Filter>소스 파일\0_Entry\PrepareWnd</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene.h">
+      <Filter>소스 파일\2_Base\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneManager.h">
+      <Filter>소스 파일\1_Manager\SceneManager</Filter>
+    </ClInclude>
+    <ClInclude Include="FirstScene.h">
+      <Filter>소스 파일\4_Game\Scene\FirstScene</Filter>
+    </ClInclude>
+    <ClInclude Include="WndManager.h">
+      <Filter>소스 파일\1_Manager\WndManager</Filter>
+    </ClInclude>
+    <ClInclude Include="GameManager.h">
+      <Filter>소스 파일\1_Manager\GameManager</Filter>
+    </ClInclude>
+    <ClInclude Include="BitmapUtil.h">
+      <Filter>소스 파일\3_Util\BitmapUtil</Filter>
+    </ClInclude>
+    <ClInclude Include="CameraUtil.h">
+      <Filter>소스 파일\3_Util\CameraUtil</Filter>
+    </ClInclude>
+    <ClInclude Include="MouseUtil.h">
+      <Filter>소스 파일\3_Util\MouseUtil</Filter>
+    </ClInclude>
+    <ClInclude Include="PngUtil.h">
+      <Filter>소스 파일\3_Util\PngUtil</Filter>
+    </ClInclude>
+    <ClInclude Include="Object.h">
+      <Filter>소스 파일\2_Base\Object</Filter>
+    </ClInclude>
+    <ClInclude Include="GameObject.h">
+      <Filter>소스 파일\2_Base\GameObject</Filter>
+    </ClInclude>
+    <ClInclude Include="Button.h">
+      <Filter>소스 파일\2_Base\Button</Filter>
+    </ClInclude>
+    <ClInclude Include="TextViewUtil.h">
+      <Filter>소스 파일\3_Util\TextView</Filter>
+    </ClInclude>
+    <ClInclude Include="MainBackground.h">
+      <Filter>소스 파일\4_Game\Object\FirstScene\UI\LogoImage</Filter>
+    </ClInclude>
+    <ClInclude Include="LogoImage.h">
+      <Filter>소스 파일\4_Game\Object\FirstScene\UI\LogoImage</Filter>
+    </ClInclude>
+    <ClInclude Include="MainButton.h">
+      <Filter>소스 파일\4_Game\Object\FirstScene\UI\Button</Filter>
+    </ClInclude>
+    <ClInclude Include="MainCheckButton.h">
+      <Filter>소스 파일\4_Game\Object\FirstScene\UI\Button</Filter>
+    </ClInclude>
+    <ClInclude Include="MapData.h">
+      <Filter>소스 파일\4_Game\Object\MaptoolScene\Other\MapData</Filter>
+    </ClInclude>
+    <ClInclude Include="MapToolScene.h">
+      <Filter>소스 파일\4_Game\Scene\MapToolScene</Filter>
+    </ClInclude>
+    <ClInclude Include="MainPanel.h">
+      <Filter>소스 파일\4_Game\Object\FirstScene\UI\MainPanel</Filter>
+    </ClInclude>
+    <ClInclude Include="TilePallete.h">
+      <Filter>소스 파일\4_Game\Object\MaptoolScene\Other\TilePallete</Filter>
+    </ClInclude>
+    <ClInclude Include="MusicSelectScene.h">
+      <Filter>소스 파일\4_Game\Scene\MusicSelectScene</Filter>
+    </ClInclude>
+    <ClInclude Include="GameScene.h">
+      <Filter>소스 파일\4_Game\Scene\GameScene</Filter>
+    </ClInclude>
+    <ClInclude Include="MusicSelectBackGround.h">
+      <Filter>소스 파일\4_Game\Scene\MusicSelectScene\UI\MusicSelectBackground</Filter>
+    </ClInclude>
+    <ClInclude Include="MusicSelectEdge.h">
+      <Filter>소스 파일\4_Game\Scene\MusicSelectScene\UI\MusicSelectAlbumCover</Filter>
+    </ClInclude>
+    <ClInclude Include="MusicSelectPanel.h">
+      <Filter>소스 파일\4_Game\Scene\MusicSelectScene\UI\MusicSelectAlbumCover</Filter>
+    </ClInclude>
+    <ClInclude Include="PauseMenu.h">
+      <Filter>소스 파일\4_Game\Scene\MusicSelectScene\UI\PauseMenu</Filter>
+    </ClInclude>
+    <ClInclude Include="MusicInfo.h">
+      <Filter>소스 파일\4_Game\Object\MusicInfo</Filter>
+    </ClInclude>
+    <ClInclude Include="MusicInfoPanel.h">
+      <Filter>소스 파일\4_Game\Scene\MusicSelectScene\UI\MusicInfoPanel</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="EntryPoint.cpp">
+      <Filter>소스 파일\0_Entry\EntryPoint</Filter>
+    </ClCompile>
+    <ClCompile Include="WindowProc.cpp">
+      <Filter>소스 파일\0_Entry\WndProc</Filter>
+    </ClCompile>
+    <ClCompile Include="PrepareWnd.cpp">
+      <Filter>소스 파일\0_Entry\PrepareWnd</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneManager.cpp">
+      <Filter>소스 파일\1_Manager\SceneManager</Filter>
+    </ClCompile>
+    <ClCompile Include="FirstScene.cpp">
+      <Filter>소스 파일\4_Game\Scene\FirstScene</Filter>
+    </ClCompile>
+    <ClCompile Include="WndManager.cpp">
+      <Filter>소스 파일\1_Manager\WndManager</Filter>
+    </ClCompile>
+    <ClCompile Include="GameManager.cpp">
+      <Filter>소스 파일\1_Manager\GameManager</Filter>
+    </ClCompile>
+    <ClCompile Include="BitmapUtil.cpp">
+      <Filter>소스 파일\3_Util\BitmapUtil</Filter>
+    </ClCompile>
+    <ClCompile Include="CameraUtil.cpp">
+      <Filter>소스 파일\3_Util\CameraUtil</Filter>
+    </ClCompile>
+    <ClCompile Include="MouseUtil.cpp">
+      <Filter>소스 파일\3_Util\MouseUtil</Filter>
+    </ClCompile>
+    <ClCompile Include="PngUtil.cpp">
+      <Filter>소스 파일\3_Util\PngUtil</Filter>
+    </ClCompile>
+    <ClCompile Include="Object.cpp">
+      <Filter>소스 파일\2_Base\Object</Filter>
+    </ClCompile>
+    <ClCompile Include="GameObject.cpp">
+      <Filter>소스 파일\2_Base\GameObject</Filter>
+    </ClCompile>
+    <ClCompile Include="Button.cpp">
+      <Filter>소스 파일\2_Base\Button</Filter>
+    </ClCompile>
+    <ClCompile Include="TextViewUtil.cpp">
+      <Filter>소스 파일\3_Util\TextView</Filter>
+    </ClCompile>
+    <ClCompile Include="MainBackground.cpp">
+      <Filter>소스 파일\4_Game\Object\FirstScene\UI\LogoImage</Filter>
+    </ClCompile>
+    <ClCompile Include="LogoImage.cpp">
+      <Filter>소스 파일\4_Game\Object\FirstScene\UI\LogoImage</Filter>
+    </ClCompile>
+    <ClCompile Include="MainButton.cpp">
+      <Filter>소스 파일\4_Game\Object\FirstScene\UI\Button</Filter>
+    </ClCompile>
+    <ClCompile Include="MainCheckButton.cpp">
+      <Filter>소스 파일\4_Game\Object\FirstScene\UI\Button</Filter>
+    </ClCompile>
+    <ClCompile Include="MapData.cpp">
+      <Filter>소스 파일\4_Game\Object\MaptoolScene\Other\MapData</Filter>
+    </ClCompile>
+    <ClCompile Include="MapToolScene.cpp">
+      <Filter>소스 파일\4_Game\Scene\MapToolScene</Filter>
+    </ClCompile>
+    <ClCompile Include="MainPanel.cpp">
+      <Filter>소스 파일\4_Game\Object\FirstScene\UI\MainPanel</Filter>
+    </ClCompile>
+    <ClCompile Include="TilePallete.cpp">
+      <Filter>소스 파일\4_Game\Object\MaptoolScene\Other\TilePallete</Filter>
+    </ClCompile>
+    <ClCompile Include="MusicSelectScene.cpp">
+      <Filter>소스 파일\4_Game\Scene\MusicSelectScene</Filter>
+    </ClCompile>
+    <ClCompile Include="GameScene.cpp">
+      <Filter>소스 파일\4_Game\Scene\GameScene</Filter>
+    </ClCompile>
+    <ClCompile Include="MusicSelectBackGround.cpp">
+      <Filter>소스 파일\4_Game\Scene\MusicSelectScene\UI\MusicSelectBackground</Filter>
+    </ClCompile>
+    <ClCompile Include="MusicSelectEdge.cpp">
+      <Filter>소스 파일\4_Game\Scene\MusicSelectScene\UI\MusicSelectAlbumCover</Filter>
+    </ClCompile>
+    <ClCompile Include="MusicSelectPanel.cpp">
+      <Filter>소스 파일\4_Game\Scene\MusicSelectScene\UI\MusicSelectAlbumCover</Filter>
+    </ClCompile>
+    <ClCompile Include="PauseMenu.cpp">
+      <Filter>소스 파일\4_Game\Scene\MusicSelectScene\UI\PauseMenu</Filter>
+    </ClCompile>
+    <ClCompile Include="MusicInfo.cpp">
+      <Filter>소스 파일\4_Game\Object\MusicInfo</Filter>
+    </ClCompile>
+    <ClCompile Include="MusicInfoPanel.cpp">
+      <Filter>소스 파일\4_Game\Scene\MusicSelectScene\UI\MusicInfoPanel</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
