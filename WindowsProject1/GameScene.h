@@ -1,5 +1,10 @@
 #pragma once
 #include "Scene.h"
+#include "MouseUtil.h"
+#include "MusicInfoPanel.h"
+#include "PauseMenu.h"
+#include "MusicSelectScene.h"
+#include "Marker.h"
 class GameScene :
 	public Scene
 {
@@ -10,11 +15,24 @@ public:
 
 #pragma region Variable
 private:
+	// 음악 정보 패널
+	MusicInfoPanel			_MusicInfoPanel;
+
+	// 일시정지 메뉴
+	m_PauseMenu ingame_PauseMenu = m_PauseMenu::Resume;
+	PauseMenu				_PauseMenu;
+	bool _IsPause = false;
+
+	// 마커
+	Marker _Marker;
+
+	POINT _MousePos;
 public:
 #pragma endregion
 
 #pragma region Method
 private:
+	void KeyInput();
 public:
 	virtual void	OnEnable()			override;
 	virtual void	OnDisable()			override;

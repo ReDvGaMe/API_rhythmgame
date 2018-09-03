@@ -59,6 +59,12 @@ public:
 
 	// 스프라이트를 그리기 시작하는 Y좌표
 	int m_DrawYIndex = 0;
+
+	// 스프라이트 시작 인덱스
+	int m_SpriteStartYIndex = 0;
+
+	// 애니메이션 종료 인덱스
+	int m_SpriteEndYIndex = 0;
 	//### ForUseSprite
 
 

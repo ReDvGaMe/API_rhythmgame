@@ -99,8 +99,6 @@ void MusicSelectScene::OnDisable() {
 }
 
 void MusicSelectScene::Init() {
-	_MusicSelectPage = 0;
-	_MusicSelectNum = 0;
 }
 
 void MusicSelectScene::Update() {

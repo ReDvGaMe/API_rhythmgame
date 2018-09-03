@@ -148,6 +148,9 @@
     <Filter Include="소스 파일\4_Game\Scene\MusicSelectScene\UI\MusicInfoPanel">
       <UniqueIdentifier>{171db610-e815-4e95-8523-7d683e53159f}</UniqueIdentifier>
     </Filter>
+    <Filter Include="소스 파일\4_Game\Scene\GameScene\Marker">
+      <UniqueIdentifier>{3c56e9b2-7542-4207-978a-abdcc4ed0359}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="defines.h">
@@ -246,6 +249,9 @@
     <ClInclude Include="MusicInfoPanel.h">
       <Filter>소스 파일\4_Game\Scene\MusicSelectScene\UI\MusicInfoPanel</Filter>
     </ClInclude>
+    <ClInclude Include="Marker.h">
+      <Filter>소스 파일\4_Game\Scene\GameScene\Marker</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="EntryPoint.cpp">
@@ -320,9 +326,6 @@
     <ClCompile Include="MusicSelectScene.cpp">
       <Filter>소스 파일\4_Game\Scene\MusicSelectScene</Filter>
     </ClCompile>
-    <ClCompile Include="GameScene.cpp">
-      <Filter>소스 파일\4_Game\Scene\GameScene</Filter>
-    </ClCompile>
     <ClCompile Include="MusicSelectBackGround.cpp">
       <Filter>소스 파일\4_Game\Scene\MusicSelectScene\UI\MusicSelectBackground</Filter>
     </ClCompile>
@@ -340,6 +343,12 @@
     </ClCompile>
     <ClCompile Include="MusicInfoPanel.cpp">
       <Filter>소스 파일\4_Game\Scene\MusicSelectScene\UI\MusicInfoPanel</Filter>
+    </ClCompile>
+    <ClCompile Include="GameScene.cpp">
+      <Filter>소스 파일\4_Game\Scene\GameScene</Filter>
+    </ClCompile>
+    <ClCompile Include="Marker.cpp">
+      <Filter>소스 파일\4_Game\Scene\GameScene\Marker</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

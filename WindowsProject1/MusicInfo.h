@@ -8,9 +8,16 @@ public:
 
 #pragma region Variable
 private:
+	// °î ¹øÈ£
 	int _MusicIndex;
-	string _MusicTitle;
+
+	// °î Á¦¸ñ
+	wstring _MusicTitle;
+
+	// ¾Ù¹ü ÀÚÄÏ °æ·Î
 	LPCWSTR _AlbumImagePath;
+
+	// °î ·¹º§
 	int _MusicLevel;
 public:
 #pragma endregion

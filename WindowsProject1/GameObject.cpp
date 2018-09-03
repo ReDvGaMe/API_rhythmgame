@@ -111,7 +111,11 @@ void GameObject::LoopSpriteIndex() {
 		m_SpriteIndex++;
 
 		// 스프라이트 인덱스가 끝 인덱스라면 시작 인덱스로 초기화
-		if (m_SpriteIndex > m_SpriteEndIndex)	m_SpriteIndex = m_SpriteStartIndex;
+		if (m_SpriteIndex > m_SpriteEndIndex) {
+			m_SpriteIndex = m_SpriteStartIndex;
+			m_DrawYIndex++;
+		}
+		if (m_DrawYIndex > m_SpriteEndYIndex)	m_DrawYIndex = m_SpriteStartYIndex;
 	}
 }
 
@@ -120,8 +124,9 @@ void GameObject::SetSpriteIndex(int start, int end) {
 	m_SpriteEndIndex = end;
 }
 
-void GameObject::SetSpriteIndex(int yIndex) {
-	m_DrawYIndex = yIndex;
+void GameObject::SetSpriteYIndex(int start, int end) {
+	m_SpriteStartYIndex = start;
+	m_SpriteEndYIndex = end;
 }
 
 void GameObject::SetSpriteDelay(int time) {

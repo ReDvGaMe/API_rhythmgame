@@ -1,5 +1,6 @@
 #pragma once
 #include "Scene.h"
+#include "TextViewUtil.h"
 #include "MusicSelectBackGround.h"
 #include "MusicSelectPanel.h"
 #include "MusicSelectEdge.h"

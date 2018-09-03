@@ -54,7 +54,7 @@ public:
 	void SetSpriteIndex(int start, int end);
 
 	// 스프라이트를 그리기 시작하는 Y인덱스를 지정
-	void SetSpriteIndex(int yIndex);
+	void SetSpriteYIndex(int start, int end);
 
 	// 스프라이트 딜레이를 설정
 	void SetSpriteDelay(int time);
