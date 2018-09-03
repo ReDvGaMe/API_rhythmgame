@@ -252,6 +252,9 @@
     <ClInclude Include="Marker.h">
       <Filter>소스 파일\4_Game\Scene\GameScene\Marker</Filter>
     </ClInclude>
+    <ClInclude Include="MarkerManager.h">
+      <Filter>소스 파일\4_Game\Scene\GameScene\Marker</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="EntryPoint.cpp">
@@ -348,6 +351,9 @@
       <Filter>소스 파일\4_Game\Scene\GameScene</Filter>
     </ClCompile>
     <ClCompile Include="Marker.cpp">
+      <Filter>소스 파일\4_Game\Scene\GameScene\Marker</Filter>
+    </ClCompile>
+    <ClCompile Include="MarkerManager.cpp">
       <Filter>소스 파일\4_Game\Scene\GameScene\Marker</Filter>
     </ClCompile>
   </ItemGroup>

@@ -10,9 +10,16 @@ Marker::Marker() {
 Marker::~Marker() {
 }
 
-Marker::Marker(LPCWSTR imagepath, int PosX, int PosY) {
-	SetImagePath(imagepath);
+Marker::Marker(string MarkerType, int PosX, int PosY) {
+	if (!MarkerType.compare("Z"))
+		SetImagePath(L"Resource\\NoteImage\\marker_z.bmp");
+	else if (!MarkerType.compare("X"))
+		SetImagePath(L"Resource\\NoteImage\\marker_x.bmp");
+	else
+		return;
+	
 	SetMarkerPos(PosX, PosY);
+
 	Init();
 }
 
@@ -24,7 +31,7 @@ void Marker::Init() {
 	SetCropSize(m_Bmp->GetBMPInfo().bmWidth, m_Bmp->GetBMPInfo().bmHeight);
 
 	// 오브젝트 크기 설정
-	SetObjectWH(180, 180);
+	SetObjectWH(200, 200);
 	SetCropSize(_CropSize, _CropSize);	// 이미지에서 잘라올 크기 설정
 
 	m_UseSprite = true;		// 스프라이트 이미지 사용
@@ -32,14 +39,14 @@ void Marker::Init() {
 	SetSpriteYIndex(0, 4);	// 스프라이트를 그리기 시작하는 Y인덱스를 설정
 	SetSpriteDelay(100);	// 스프라이트 딜레이 설정
 
-	// 초기 좌표 설정
-	/*m_PosX = m_PosX;
-	m_PosY = m_PosY;*/
 	UpdateRect();
 }
 
 void Marker::Update() {
 	BaseUpdate();
+
+	if (m_DrawYIndex == 4 && m_SpriteIndex == 4)
+		_EndMarkerSprite = true;
 }
 
 void Marker::Render(HDC hdc) {
@@ -53,4 +60,8 @@ void Marker::SetMarkerPos(int PosX, int PosY) {
 
 void Marker::SetImagePath(LPCWSTR imagepath) {
 	_ImagePath = imagepath;
+}
+
+bool Marker::GetEndMarkerSprite() {
+	return _EndMarkerSprite;
 }

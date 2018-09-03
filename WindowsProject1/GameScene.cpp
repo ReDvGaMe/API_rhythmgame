@@ -22,13 +22,14 @@ void GameScene::Init() {
 void GameScene::Update() {
 	KeyInput();
 	_MusicInfoPanel.Update();
-	_Marker.Update();
+	_MarkerManager.Update();
 }
 
 void GameScene::Render(HDC hdc) {
 	_MusicInfoPanel.Render(hdc);
-	_Marker.Render(hdc);
+	_MarkerManager.Render(hdc);
 }
+
 void GameScene::KeyInput() {
 	if (!windowActive)	return;
 
@@ -76,26 +77,31 @@ void GameScene::KeyInput() {
 		_MousePos.x = MouseUtil::GetClientMousePosition().x;
 		_MousePos.y = MouseUtil::GetClientMousePosition().y;
 
-		if (_MousePos.x > (_Marker.m_PosX - _Marker._CropSize - 10) &&
+		_MarkerManager.MakeMarker("Z", _MousePos.x, _MousePos.y);
+		Log("_Z KEY MARKER_", _MousePos.x, _MousePos.y);
+		/*if (_MousePos.x > (_Marker.m_PosX - _Marker._CropSize - 10) &&
 			_MousePos.x < (_Marker.m_PosX + _Marker._CropSize + 10) &&
 			_MousePos.y > (_Marker.m_PosY - _Marker._CropSize - 10) &&
 			_MousePos.y < (_Marker.m_PosY + _Marker._CropSize + 10)) {
 			Log("_Z KEY MARKER_", _Marker.m_PosX - _Marker._CropSize, _Marker.m_PosX + _Marker._CropSize);
 			Log("_Z KEY MARKER_", _Marker.m_PosY - _Marker._CropSize, _Marker.m_PosY + _Marker._CropSize);
 			Log("_Z KEY MousPos_", _MousePos.x, _MousePos.y);
-		}
+		}*/
 	}
 	if (GetAsyncKeyState(0x58) & 0x0001) {
 		_MousePos.x = MouseUtil::GetClientMousePosition().x;
 		_MousePos.y = MouseUtil::GetClientMousePosition().y;
 
-		if (_MousePos.x > (_Marker.m_PosX - _Marker._CropSize - 10) &&
+		_MarkerManager.MakeMarker("X", _MousePos.x, _MousePos.y);
+		Log("_X KEY MARKER_", _MousePos.x, _MousePos.y);
+
+	/*	if (_MousePos.x > (_Marker.m_PosX - _Marker._CropSize - 10) &&
 			_MousePos.x < (_Marker.m_PosX + _Marker._CropSize - 10) &&
 			_MousePos.y > (_Marker.m_PosY - _Marker._CropSize - 10) &&
 			_MousePos.y < (_Marker.m_PosY + _Marker._CropSize - 10)) {
 			Log("_X KEY MARKER_", _Marker.m_PosX - _Marker._CropSize, _Marker.m_PosX + _Marker._CropSize);
 			Log("_X KEY MARKER_", _Marker.m_PosY - _Marker._CropSize, _Marker.m_PosY + _Marker._CropSize);
 			Log("_X KEY MousPos_", _MousePos.x, _MousePos.y);
-		}
+		}*/
 	}
 }

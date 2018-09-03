@@ -10,6 +10,7 @@
 #include <iostream>
 #include <string>
 #include <map>
+#include <list>
 
 // TransparentBlt를 사용하기 위해서 추가
 #pragma comment (lib, "Msimg32.lib")

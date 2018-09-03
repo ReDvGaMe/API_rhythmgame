@@ -35,6 +35,7 @@
     <ClInclude Include="MapData.h" />
     <ClInclude Include="MapToolScene.h" />
     <ClInclude Include="Marker.h" />
+    <ClInclude Include="MarkerManager.h" />
     <ClInclude Include="MouseUtil.h" />
     <ClInclude Include="MusicInfo.h" />
     <ClInclude Include="MusicInfoPanel.h" />
@@ -70,6 +71,7 @@
     <ClCompile Include="MapData.cpp" />
     <ClCompile Include="MapToolScene.cpp" />
     <ClCompile Include="Marker.cpp" />
+    <ClCompile Include="MarkerManager.cpp" />
     <ClCompile Include="MouseUtil.cpp" />
     <ClCompile Include="MusicInfo.cpp" />
     <ClCompile Include="MusicInfoPanel.cpp" />

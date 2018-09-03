@@ -4,7 +4,7 @@
 #include "MusicInfoPanel.h"
 #include "PauseMenu.h"
 #include "MusicSelectScene.h"
-#include "Marker.h"
+#include "MarkerManager.h"
 class GameScene :
 	public Scene
 {
@@ -24,7 +24,7 @@ private:
 	bool _IsPause = false;
 
 	// ¸¶Ä¿
-	Marker _Marker;
+	MarkerManager _MarkerManager;
 
 	POINT _MousePos;
 public:

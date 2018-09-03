@@ -5,7 +5,8 @@ class Marker :
 public:
 	Marker();
 	virtual ~Marker();
-	Marker(LPCWSTR imagepath, int PosX, int PosY);
+
+	Marker(string MarkerType, int PosX, int PosY);
 
 
 #pragma region Variable
@@ -13,6 +14,7 @@ private:
 public:
 	int _CropSize = 100;
 	LPCWSTR _ImagePath;
+	bool _EndMarkerSprite = false;
 #pragma endregion
 
 #pragma region Method
@@ -22,8 +24,9 @@ public:
 	virtual void Update()			override;
 	virtual void Render(HDC hdc)	override;
 
-	void SetMarkerPos(int Posx, int Posy);
+	void SetMarkerPos(int PosX, int PosY);
 	void SetImagePath(LPCWSTR imagepath);
+	bool GetEndMarkerSprite();
 #pragma endregion
 };
 
