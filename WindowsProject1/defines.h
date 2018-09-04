@@ -54,8 +54,8 @@ __forceinline void Log(string logname, T1 value1, T2 value2) {
 #define	SCREEN_HEIGHT	GetSystemMetrics(SM_CYSCREEN)
 
 // 창 가로 세로 크기
-#define WND_WIDTH	800
-#define WND_HEIGHT	1000
+#define WND_WIDTH	815
+#define WND_HEIGHT	1040
 
 // 창 크기를 고정시킬 것인지 지정
 #define	FREEZE_WND_SIZE	true

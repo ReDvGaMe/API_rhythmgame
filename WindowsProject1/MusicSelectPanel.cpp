@@ -24,8 +24,8 @@ void MusicSelectPanel::Init() {
 	for (int i = 0; i < 4; i++) {
 		for (int j = 0; j < 4; j++) {
 			// 초기 좌표 설정
-			m_PosX[j] = 100 + (195 * j);
-			m_PosY[i] = 300 + (190 * i);
+			m_PosX[j] = 100 + (200 * j);
+			m_PosY[i] = 300 + (200 * i);
 			UpdateRect(i, j);
 		}
 	}

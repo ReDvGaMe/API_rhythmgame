@@ -53,5 +53,8 @@ void MarkerManager::Render(HDC hdc) {
 
 void MarkerManager::MakeMarker(string MarkerType, int PosX, int PosY) {
 	// 리스트 뒤에 마커를 동적으로 생성
-	_Marker.push_back(new Marker(MarkerType, PosX, PosY));
+	if (!MarkerType.compare("X"))
+		_Marker.push_back(new Marker(MarkerType, PosX, PosY));
+	else
+		_Marker.push_back(new Marker(MarkerType, MarkerPosXArr[PosX], MarkerPosYArr[PosY]));
 }

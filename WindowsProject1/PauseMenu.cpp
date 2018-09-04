@@ -20,8 +20,8 @@ void PauseMenu::Init() {
 	SetCropSize(m_Png->GetWidth(), m_Png->GetHeight());
 
 	// 초기 좌표 설정
-	m_PosX = WND_WIDTH / 2;
-	m_PosY = WND_HEIGHT / 2;
+	m_PosX = WND_WIDTH / 2 - 8;
+	m_PosY = WND_HEIGHT / 2 - 18;
 	UpdateRect();
 }
 

@@ -31,7 +31,7 @@ void Marker::Init() {
 	SetCropSize(m_Bmp->GetBMPInfo().bmWidth, m_Bmp->GetBMPInfo().bmHeight);
 
 	// 오브젝트 크기 설정
-	SetObjectWH(200, 200);
+	SetObjectWH(_ObjSize, _ObjSize);
 	SetCropSize(_CropSize, _CropSize);	// 이미지에서 잘라올 크기 설정
 
 	m_UseSprite = true;		// 스프라이트 이미지 사용

@@ -36,7 +36,7 @@ void MusicSelectEdge::Render(HDC hdc) {
 void MusicSelectEdge::UpdateEdgePos(int MusicNo) {
 	int indexY = MusicNo / 4;
 	int indexX = MusicNo - (indexY * 4);
-	m_PosX = 100 + (195 * indexX);
-	m_PosY = 300 + (190 * indexY);
+	m_PosX = 100 + (200 * indexX);
+	m_PosY = 300 + (200 * indexY);
 	UpdateRect();
 }

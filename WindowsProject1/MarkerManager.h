@@ -10,10 +10,15 @@ public:
 #pragma region Variable
 private:
 	bool _IsActiveMarker = false;
+	
 public:
 	// 마커 리스트 추가
 	list<Marker*> _Marker;
 	list<Marker*>::iterator _MarkerIter;
+
+	// 마커를 출력할 좌표
+	const int MarkerPosXArr[4] = { 100, 300, 500, 700 };
+	const int MarkerPosYArr[4] = { 300, 500, 700, 900 };
 #pragma endregion
 
 #pragma region Method
