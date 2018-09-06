@@ -1,6 +1,7 @@
 #pragma once
 #include "WndManager.h"
 #include "SceneManager.h"
+#include "SoundManager.h"
 
 
 class GameManager final :
@@ -13,6 +14,7 @@ public:
 #pragma region Variable
 private:
 	SceneManager *			_SceneManager;
+	SoundManager *			_SoundManager;
 public:
 #pragma endregion
 
@@ -28,6 +30,9 @@ public:
 
 	// SceneManager에 접근할 때 사용할 함수
 	SceneManager* GetSceneManager();
+
+	// SoundManager에 접근할 때 사용할 함수
+	SoundManager* GetSoundManager();
 
 #pragma endregion
 };

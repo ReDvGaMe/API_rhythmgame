@@ -119,9 +119,8 @@ void MusicSelectScene::Render(HDC hdc) {
 		}
 	}
 	_MusicSelectEdge.Render(hdc);
+	_MusicInfoPanel.Render(hdc);
 
 	if (_IsPause)
 		_PauseMenu.Render(hdc);
-
-	_MusicInfoPanel.Render(hdc);
 }

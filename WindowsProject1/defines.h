@@ -1,6 +1,6 @@
 #pragma once
 #pragma warning (disable : 4996)
-#pragma warning (disable: 4819)
+#pragma warning (disable : 4819)
 
 // 메모리 릭을 확인하기 위해 포함
 #include <crtdbg.h>
@@ -75,6 +75,8 @@ extern bool windowActive;
 #define	BMP	0
 #define	PNG	1
 
+// 사운드 사용을 위한 라이브러리 추가
+#include <fmod.h>
 
 /*
 #pragma region Variable

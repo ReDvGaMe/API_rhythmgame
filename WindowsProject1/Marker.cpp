@@ -17,7 +17,7 @@ Marker::Marker(string MarkerType, int PosX, int PosY) {
 		SetImagePath(L"Resource\\NoteImage\\marker_x.bmp");
 	else
 		return;
-	
+
 	SetMarkerPos(PosX, PosY);
 
 	Init();

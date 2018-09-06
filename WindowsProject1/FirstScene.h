@@ -1,5 +1,6 @@
 #pragma once
 #include "Scene.h"
+#include "SoundManager.h"
 #include "TextViewUtil.h"
 #include "MainButton.h"
 #include "MainCheckButton.h"
@@ -9,7 +10,7 @@
 
 enum class StartMenu {
 	Start,
-	Setting,
+	MakeSheet,
 	Exit
 };
 
@@ -23,7 +24,7 @@ public:
 #pragma region Variable
 private:
 	// 글씨
-	TextViewUtil _GuideGameStart, _GuideSetting, _GuideExit;
+	TextViewUtil _GuideGameStart, _GuideMakeSheet, _GuideExit;
 
 	// 로고 이미지
 	LogoImage _LogoImage;

@@ -26,6 +26,11 @@ void GameScene::Update() {
 }
 
 void GameScene::Render(HDC hdc) {
+	// 배경색 그리기
+	SelectObject(hdc, GetStockObject(DC_BRUSH));
+	SetDCBrushColor(hdc, RGB(0, 0, 0));
+	Rectangle(hdc, 0, 0, WND_WIDTH, WND_HEIGHT);
+
 	_MusicInfoPanel.Render(hdc);
 	_MarkerManager.Render(hdc);
 
@@ -51,6 +56,9 @@ void GameScene::Render(HDC hdc) {
 	Rectangle(hdc, 400, 800, 600, 1000);
 	Rectangle(hdc, 600, 800, 800, 1000);
 	*/
+
+	if (_IsPause)
+		_PauseMenu.Render(hdc);
 }
 
 void GameScene::KeyInput() {
@@ -85,8 +93,7 @@ void GameScene::KeyInput() {
 				_IsPause = false;
 				return;
 			case m_PauseMenu::MainMenu:
-				_IsPause = false;
-				gameManager->GetSceneManager()->ChangeScene("MusicSelectSecene");
+				gameManager->GetSceneManager()->ChangeScene("MusicSelectScene");
 			default:
 				return;
 			}
@@ -102,38 +109,9 @@ void GameScene::KeyInput() {
 	if (GetAsyncKeyState(0x5A) & 0x0001) {
 		_MousePos.x = MouseUtil::GetClientMousePosition().x;
 		_MousePos.y = MouseUtil::GetClientMousePosition().y;
-
-		/*_MarkerManager.MakeMarker("Z", _MousePos.x, _MousePos.y);*/
-		for (int i = 0; i < 4; i++) {
-			for(int j = 0; j < 4; j++)
-				_MarkerManager.MakeMarker("Z", i, j);
-		}
-		Log("_Z KEY MARKER_", _MousePos.x, _MousePos.y);
-		/*if (_MousePos.x > (_Marker.m_PosX - _Marker._CropSize - 10) &&
-			_MousePos.x < (_Marker.m_PosX + _Marker._CropSize + 10) &&
-			_MousePos.y > (_Marker.m_PosY - _Marker._CropSize - 10) &&
-			_MousePos.y < (_Marker.m_PosY + _Marker._CropSize + 10)) {
-			Log("_Z KEY MARKER_", _Marker.m_PosX - _Marker._CropSize, _Marker.m_PosX + _Marker._CropSize);
-			Log("_Z KEY MARKER_", _Marker.m_PosY - _Marker._CropSize, _Marker.m_PosY + _Marker._CropSize);
-			Log("_Z KEY MousPos_", _MousePos.x, _MousePos.y);
-		}*/
 	}
 	if (GetAsyncKeyState(0x58) & 0x0001) {
 		_MousePos.x = MouseUtil::GetClientMousePosition().x;
 		_MousePos.y = MouseUtil::GetClientMousePosition().y;
-
-		/*_MarkerManager.MakeMarker("X", _MousePos.x, _MousePos.y);*/
-		_MarkerManager.MakeMarker("X", _MousePos.x, _MousePos.y);
-		//Log("_X KEY MARKER_", MarkerPosArr[3][3].x, MarkerPosArr[3][3].y);
-		Log("_X KEY MARKER_", _MousePos.x, _MousePos.y);
-
-	/*	if (_MousePos.x > (_Marker.m_PosX - _Marker._CropSize - 10) &&
-			_MousePos.x < (_Marker.m_PosX + _Marker._CropSize - 10) &&
-			_MousePos.y > (_Marker.m_PosY - _Marker._CropSize - 10) &&
-			_MousePos.y < (_Marker.m_PosY + _Marker._CropSize - 10)) {
-			Log("_X KEY MARKER_", _Marker.m_PosX - _Marker._CropSize, _Marker.m_PosX + _Marker._CropSize);
-			Log("_X KEY MARKER_", _Marker.m_PosY - _Marker._CropSize, _Marker.m_PosY + _Marker._CropSize);
-			Log("_X KEY MousPos_", _MousePos.x, _MousePos.y);
-		}*/
 	}
 }

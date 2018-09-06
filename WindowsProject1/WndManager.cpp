@@ -44,7 +44,7 @@ void WndManager::CreateWnd(PrepareWnd & value) {
 
 		// 창을 화면에서 어떤 곳에 배치시킬 것인지 지정
 		(SCREEN_WIDTH - WND_WIDTH) / 2,
-		(SCREEN_HEIGHT - WND_HEIGHT) / 2,
+		(SCREEN_HEIGHT - WND_HEIGHT) / 2 - 10,
 
 		// 창의 크기 지정
 		WND_WIDTH, WND_HEIGHT,

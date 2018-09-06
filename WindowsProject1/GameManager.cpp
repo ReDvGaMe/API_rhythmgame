@@ -4,11 +4,14 @@
 
 GameManager::GameManager() {
 	_SceneManager = new SceneManager();
+	_SoundManager = new SoundManager();
 }
 
 GameManager::~GameManager() {
 	delete _SceneManager;
 	_SceneManager = NULL;
+	delete _SoundManager;
+	_SoundManager = NULL;
 
 	// 메모리 릭 확인
 	_CrtDumpMemoryLeaks();
@@ -16,6 +19,7 @@ GameManager::~GameManager() {
 
 void GameManager::Update() {
 	_SceneManager->Update();
+	_SoundManager->Update();
 }
 
 void GameManager::Render(HDC hdc) {
@@ -66,4 +70,8 @@ GameManager * GameManager::GetGameManager() {
 
 SceneManager * GameManager::GetSceneManager() {
 	return _SceneManager;
+}
+
+SoundManager * GameManager::GetSoundManager() {
+	return _SoundManager;
 }
